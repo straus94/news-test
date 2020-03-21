@@ -1,0 +1,34 @@
+<div class="login">
+  <div class="login__modal">
+    <div class="login__header">
+      <div class="login__title">Log in</div>
+    </div>
+    <div class="login__body">
+      <div class="login__item">
+        <label class="login__label {{inputMoveName || name.length ? 'login__label--move-login' : ''}}" for="name">Name</label>
+        <input class="login__input"
+               [(ngModel)]="name"
+               (focus)="inputMoveName = true"
+               (focusout)="inputMoveName = false"
+               type="text" id="name"
+               autocomplete="none">
+      </div>
+
+      <div class="login__item">
+        <label class="login__label {{inputMovePassword || password.length ? 'login__label--move-password' : ''}}" for="password">Password</label>
+        <input class="login__input"
+               [(ngModel)]="password"
+               (focus)="inputMovePassword = true"
+               (focusout)="inputMovePassword = false"
+               type="password" id="password">
+
+        <div *ngIf="incorrectPassword" class="login__error">Incorrect name or password</div>
+      </div>
+
+
+      <button
+        (click)="login()"
+        class="login__btn">Log in</button>
+    </div>
+  </div>
+</div>

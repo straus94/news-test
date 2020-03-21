@@ -1,0 +1,23 @@
+<div *ngIf="news.length || theme.length">
+  <h2 class="title" *ngIf="news.length">News: {{theme.length ? theme : themeDefault}}</h2>
+  <div class="news" >
+    <ng-container *ngFor="let item of news">
+      <div class="news__item">
+        <div class="news__wrapper">
+          <div class="news__poster" [style.backgroundImage]="'url('+ item.urlToImage +')'">
+          </div>
+          <div class="news__info">
+            <div class="news__label"><span class="news__title">Author: </span> <span class="news__subtitle">{{item.author}}</span></div>
+            <div class="news__label"><span class="news__title">Title: </span> <span class="news__subtitle">{{item.title}}</span></div>
+            <div class="news__label"><span class="news__title">Description: </span> <span class="news__subtitle">{{item.description}}</span></div>
+            <div class="news__label"><span class="news__title">Content: </span> <span class="news__subtitle">{{item.author}}</span></div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<ng-container *ngIf="theme.length && isEmpty">
+  <div class="empty"><span class="empty__theme">{{theme}}</span> news not found</div>
+</ng-container>

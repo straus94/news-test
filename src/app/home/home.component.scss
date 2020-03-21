@@ -1,0 +1,39 @@
+.home {
+
+  &__title {
+    font-size: 20px;
+    margin: 30px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__input {
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 260px;
+    background-color: transparent;
+
+    &:focus {
+      border: 1px solid green;
+    }
+  }
+
+  &__btn {
+    outline: none;
+    background-color: #006bb6;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+
+    &:hover {
+      background-color: #001e37;
+    }
+  }
+}

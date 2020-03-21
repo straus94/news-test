@@ -1,0 +1,26 @@
+.profile {
+  padding: 30px 0;
+
+  &__info {
+    display: flex;
+  }
+
+  &__avatar {
+    width: 140px;
+    height: 200px;
+    border: 1px solid #ccc;
+  }
+
+  &__data {
+    margin: 0 0 0 15px;
+  }
+
+  &__item {
+    font-weight: bold;
+    margin: 0 0 10px 0;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}

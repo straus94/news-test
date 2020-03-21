@@ -1,0 +1,7 @@
+<h2 class="home__title">Hello, {{name}}</h2>
+<div class="home__wrapper">
+  <input class="home__input" type="text" placeholder="Enter theme"
+         (keydown.enter)="moveToTheme()"
+         [(ngModel)]="theme">
+  <button class="home__btn" (click)="moveToTheme()">Search</button>
+</div>
