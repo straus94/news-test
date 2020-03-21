@@ -1,4 +1,5 @@
 # Install
+git clone https://github.com/straus94/news-test.git
 
 1) npm install
 2) npm run start
