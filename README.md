@@ -1,6 +1,10 @@
-# NewsTest
+# Install
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+1) npm install
+2) npm run start
+3) move to -> http://localhost:4200/
+
+
 
 ## Development server
 
